@@ -8,48 +8,31 @@ public class TreeNode {
     public TreeNode(String label) {
         this.label = label;
         this.children = new ArrayList<>();
-    }
-
-    @Override
-    public String toString() {
-        return "TreeNode{" +
-                " label='" + label + '\'' +
-                ", parent=" + parent +
-                ", nodeValue=" + nodeValue +
-                ", isPruned=" + isPruned +
-                '}';
+        this.parents = new ArrayList<>();
     }
 
     private List<TreeNode> children;
-    private TreeNode parent;
+    private List<TreeNode> parents;
     private String label;
     private Integer nodeValue;
+    private boolean isMax;
     private boolean isPruned;
     private TreeNode moveNextPath;
-    private Integer moveValue;
 
     public List<TreeNode> getChildren() {
         return children;
     }
 
-    public void setChildren(List<TreeNode> children) {
-        this.children = children;
+    public List<TreeNode> getParents() {
+        return parents;
     }
 
-    public TreeNode getParent() {
-        return parent;
-    }
-
-    public void setParent(TreeNode parent) {
-        this.parent = parent;
+    public void setParents(TreeNode parents) {
+        this.parents.add(parents);
     }
 
     public String getLabel() {
         return label;
-    }
-
-    public void setLabel(String label) {
-        this.label = label;
     }
 
     public Integer getNodeValue() {
@@ -58,6 +41,14 @@ public class TreeNode {
 
     public void setNodeValue(Integer nodeValue) {
         this.nodeValue = nodeValue;
+    }
+
+    public void setIsMax(boolean max) {
+        isMax = max;
+    }
+
+    public String getNodeType() {
+        return isMax ? Constants.MAX_NODE : Constants.MIN_NODE;
     }
 
     public boolean isPruned() {
@@ -76,11 +67,4 @@ public class TreeNode {
         this.moveNextPath = moveNextPath;
     }
 
-    public Integer getMoveValue() {
-        return moveValue;
-    }
-
-    public void setMoveValue(Integer moveValue) {
-        this.moveValue = moveValue;
-    }
 }

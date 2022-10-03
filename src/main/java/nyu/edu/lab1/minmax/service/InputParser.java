@@ -20,10 +20,11 @@ public class InputParser {
         List<String> instructions = InputFileReader.readInputFile(this.filePath);
         Map<String, TreeNode> nodeMap = new HashMap<>();
         for (String instruction : instructions) {
-            System.out.println(instruction);
             processInputLine(instruction, nodeMap);
         }
-        return TreeValidator.validateSingleRootNode(nodeMap);
+        TreeNode root = TreeValidator.getTreeRootNode(nodeMap);
+        TreeValidator.validateTree(root);
+        return root;
     }
 
     private void processInputLine(String input, Map<String, TreeNode> nodeMap) throws InvalidInputException {
@@ -75,11 +76,8 @@ public class InputParser {
                 childNode = new TreeNode(childLabel);
                 nodeMap.put(childLabel, childNode);
             }
-
-            System.out.println(parent.getLabel() + " -> " + childNode.getLabel());
-
             parent.getChildren().add(childNode);
-            TreeValidator.setParentNode(childNode, parent);
+            childNode.setParents(parent);
         }
     }
 
@@ -90,13 +88,13 @@ public class InputParser {
         }
         String label = leafInput[0].trim();
         if (! nodeMap.containsKey(label)) {
-            throw new InvalidInputException("Leaf node: " + label + " is not part of tree but is being assigned a value");
+            throw new InvalidInputException("Trying to assign value to a leaf node not part of the tree: " + label);
         }
-        Integer value = null;
+        Integer value;
         try {
             value = Integer.parseInt(leafInput[1].trim());
         } catch (Exception ex) {
-            throw new InvalidInputException("Invalid value provided for Leaf node: " + label);
+            throw new InvalidInputException(String.format("Invalid value: %s for leaf node: %s", leafInput[1].trim(), label));
         }
         nodeMap.get(label).setNodeValue(value);
     }
