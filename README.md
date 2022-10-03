@@ -1,7 +1,8 @@
 ## System requirements to build and run the project:
 
-1. Apache Maven
-2. JDK
+1. Apache Maven - (3.6.0)
+2. JDK - (1.8)
+3. The code has been tested on `crackle1` server
 
 ## Steps:
 

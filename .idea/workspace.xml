@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32cfcd23-7290-49fb-a7cf-5c59aac3c0fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nyu/edu/lab1/minmax/MinMaxExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nyu/edu/lab1/minmax/MinMaxExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nyu/edu/lab1/minmax/dto/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nyu/edu/lab1/minmax/dto/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nyu/edu/lab1/minmax/dto/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nyu/edu/lab1/minmax/dto/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nyu/edu/lab1/minmax/service/InputParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nyu/edu/lab1/minmax/service/InputParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nyu/edu/lab1/minmax/service/MinMaxSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nyu/edu/lab1/minmax/service/MinMaxSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nyu/edu/lab1/minmax/service/TreeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nyu/edu/lab1/minmax/service/TreeValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,20 +38,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="MinMaxExecutor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="nyu.edu.lab1.minmax.MinMaxExecutor" />
@@ -94,7 +87,9 @@
       <workItem from="1664655385802" duration="26000" />
       <workItem from="1664659123372" duration="11000" />
       <workItem from="1664746776487" duration="202000" />
-      <workItem from="1664753979379" duration="5270000" />
+      <workItem from="1664753979379" duration="5745000" />
+      <workItem from="1664765701750" duration="108000" />
+      <workItem from="1664767130568" duration="83000" />
     </task>
     <servers />
   </component>
