@@ -7,7 +7,7 @@ import java.util.*;
 public class MinMaxSolver {
 
     private final String PRINT_NODE_VALUE = "%s(%s) chooses %s for %d\n";
-    private final String PRINT_PRUNED_NODE = "%s(%s) is pruned\n";
+    private final String PRINT_PRUNED_NODE = "%s(%s) is pruned and it's subtrees won't be visited\n";
 
     private boolean enablePruning;
     private boolean isRootMax;
@@ -66,7 +66,9 @@ public class MinMaxSolver {
 
     private void printNodeAction(TreeNode node) {
         if (this.isVerbose) {
-            if (! node.isPruned()) {
+            if (node.isPruned()) {
+                System.out.printf(PRINT_PRUNED_NODE, node.getNodeType(), node.getLabel());
+            } else {
                 String nextMove = node.getMoveNextPath() != null ? node.getMoveNextPath().getLabel() : null;
                 System.out.printf(PRINT_NODE_VALUE, node.getNodeType(), node.getLabel(), nextMove, node.getNodeValue());
             }

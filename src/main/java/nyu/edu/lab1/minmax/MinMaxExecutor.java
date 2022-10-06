@@ -13,7 +13,7 @@ public class MinMaxExecutor {
             }
             boolean isVerbose = false, enablePruning = false;
             String filePath = args[args.length - 1];
-            boolean isRootMax = isRootMaxRequesed(args[args.length - 2]);
+            boolean isRootMax = isRootMaxRequested(args[args.length - 2]);
             for (int i = args.length - 3; i >= 0; i--) {
                 if (isPruningRequested(args[i])) {
                     enablePruning = true;
@@ -34,7 +34,7 @@ public class MinMaxExecutor {
         System.exit(1);
     }
 
-    private static boolean isRootMaxRequesed(String config) {
+    private static boolean isRootMaxRequested(String config) {
         if (config.equalsIgnoreCase("max")) {
             return true;
         } else if (config.equalsIgnoreCase("min")) {
